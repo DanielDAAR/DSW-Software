@@ -1731,12 +1731,470 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
     gap: var(--spacing-sm);
 }
 
+/* ============================================
+   RESPONSIVE — Mobile First
+   ============================================ */
+
+/* ---------- Tablet (max-width: 1024px) ---------- */
+@media (max-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .hero-content {
+        order: 2;
+    }
+    
+    .hero-visual {
+        order: 1;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-actions {
+        justify-content: center;
+    }
+    
+    .hero-stats {
+        justify-content: center;
+    }
+    
+    .services-grid,
+    .portfolio-grid,
+    .tech-grid,
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .case-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-2xl);
+    }
+}
+
+/* ---------- Mobile (max-width: 768px) ---------- */
+@media (max-width: 768px) {
+    /* Navigation */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: var(--color-bg);
+        flex-direction: column;
+        justify-content: center;
+        padding: var(--spacing-2xl);
+        transition: right var(--transition-base);
+        z-index: var(--z-modal);
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        gap: var(--spacing-2xl);
+        align-items: center;
+    }
+    
+    .nav-link {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    .nav-toggle,
+    .nav-close {
+        display: flex;
+    }
+    
+    .nav-close {
+        position: absolute;
+        top: var(--spacing-xl);
+        right: var(--spacing-xl);
+    }
+    
+    .nav-cta {
+        display: none;
+    }
+    
+    /* Hero */
+    .hero {
+        padding-top: 100px;
+    }
+    
+    .hero-badge {
+        font-size: 0.75rem;
+    }
+    
+    .hero-title {
+        font-size: clamp(1.75rem, 6vw, 2.5rem);
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .hero-visual {
+        max-width: 100%;
+    }
+    
+    .hero-card {
+        font-size: 0.75rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: var(--spacing-lg);
+    }
+    
+    .stat-divider {
+        width: 40px;
+        height: 1px;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .hero-scroll {
+        display: none;
+    }
+    
+    /* Sections */
+    .section {
+        padding: 3rem 0;
+    }
+    
+    .section-header {
+        margin-bottom: 2rem;
+    }
+    
+    .section-title {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+    }
+    
+    .section-description {
+        font-size: 1rem;
+    }
+    
+    /* Services */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-card {
+        padding: var(--spacing-xl);
+    }
+    
+    /* Portfolio */
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card {
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    /* Process */
+    .process-timeline {
+        gap: var(--spacing-lg);
+    }
+    
+    .process-step {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .step-number {
+        margin-bottom: var(--spacing-md);
+    }
+    
+    /* Technologies */
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tech-category {
+        padding: var(--spacing-lg);
+    }
+    
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonial-card {
+        padding: var(--spacing-lg);
+    }
+    
+    /* FAQ */
+    .faq-question {
+        font-size: 0.9375rem;
+        padding: var(--spacing-md);
+    }
+    
+    .faq-answer p {
+        padding: 0 var(--spacing-md) var(--spacing-md);
+        font-size: 0.875rem;
+    }
+    
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+    
+    .contact-info {
+        text-align: center;
+    }
+    
+    .contact-methods {
+        justify-content: center;
+    }
+    
+    .form-group {
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .form-label {
+        font-size: 0.875rem;
+    }
+    
+    .form-input {
+        padding: 0.875rem;
+        font-size: 1rem;
+    }
+    
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-links {
+        margin-bottom: var(--spacing-xl);
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: var(--spacing-lg);
+        text-align: center;
+    }
+    
+    .footer-social {
+        justify-content: center;
+    }
+    
+    /* WhatsApp Button */
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+        width: 56px;
+        height: 56px;
+    }
+}
+
+/* ---------- Small Mobile (max-width: 480px) ---------- */
 @media (max-width: 480px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+    
     .hero-actions {
         flex-direction: column;
+        width: 100%;
     }
     
     .btn-lg {
         width: 100%;
+        justify-content: center;
+    }
+    
+    .hero-badge {
+        font-size: 0.6875rem;
+        padding: var(--spacing-xs) var(--spacing-md);
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-description {
+        font-size: 0.9375rem;
+    }
+    
+    .section {
+        padding: 2.5rem 0;
+    }
+    
+    .section-tag {
+        font-size: 0.75rem;
+    }
+    
+    .service-card {
+        padding: var(--spacing-lg);
+    }
+    
+    .service-icon {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .project-image {
+        height: 200px;
+    }
+    
+    .process-step {
+        padding: var(--spacing-lg);
+    }
+    
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 0.875rem;
+    }
+    
+    .tech-item {
+        font-size: 0.8125rem;
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+    
+    .testimonial-card {
+        padding: var(--spacing-lg);
+    }
+    
+    .testimonial-text {
+        font-size: 0.875rem;
+    }
+    
+    .faq-question {
+        font-size: 0.875rem;
+        padding: var(--spacing-md);
+    }
+    
+    .faq-answer p {
+        font-size: 0.8125rem;
+    }
+    
+    .contact-methods {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .contact-method {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .form-input {
+        padding: 0.75rem;
+    }
+    
+    .btn-full {
+        padding: 0.875rem;
+    }
+    
+    .footer-description {
+        font-size: 0.875rem;
+    }
+    
+    .footer-title {
+        font-size: 0.875rem;
+    }
+    
+    .footer-links a {
+        font-size: 0.8125rem;
+    }
+}
+
+/* ---------- iPhone SE & smaller (max-width: 375px) ---------- */
+@media (max-width: 375px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-description {
+        font-size: 0.875rem;
+    }
+    
+    .stat-number {
+        font-size: 1.75rem;
+    }
+    
+    .stat-label {
+        font-size: 0.75rem;
+    }
+    
+    .service-title {
+        font-size: 1.125rem;
+    }
+    
+    .project-title {
+        font-size: 1.125rem;
+    }
+    
+    .step-title {
+        font-size: 1rem;
+    }
+}
+
+/* ---------- Touch Device Improvements ---------- */
+@media (hover: none) and (pointer: coarse) {
+    .btn:hover {
+        transform: none;
+    }
+    
+    .service-card:hover,
+    .project-card:hover,
+    .testimonial-card:hover {
+        transform: none;
+    }
+    
+    .nav-link:hover {
+        color: var(--color-text);
+    }
+}
+
+/* ---------- Safe Area (Notch devices) ---------- */
+@supports (padding: env(safe-area-inset-bottom)) {
+    .whatsapp-float {
+        bottom: calc(20px + env(safe-area-inset-bottom));
+    }
+    
+    .footer {
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+}
+
+/* ---------- Dark Mode Support ---------- */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #0a0a0f;
+        --color-bg-secondary: #12121a;
+        --color-text: #ffffff;
+    }
+}
+
+/* ---------- High Contrast ---------- */
+@media (prefers-contrast: high) {
+    :root {
+        --color-border: rgba(255, 255, 255, 0.2);
+        --color-text-secondary: #c0c0c0;
     }
 }
