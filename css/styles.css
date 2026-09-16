@@ -2,6 +2,15 @@
    D.Softworks — Main Styles
    ============================================ */
 
+/* ---------- Image Reset ---------- */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
 /* ---------- CSS Variables ---------- */
 :root {
     /* Colors */
@@ -253,12 +262,14 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 }
 
 .preloader-logo-img {
+    display: block;
     width: 40px;
     height: 40px;
     max-width: 40px;
     max-height: 40px;
     border-radius: var(--radius-md);
     object-fit: cover;
+    -webkit-object-fit: cover;
     border: 2px solid var(--color-primary);
     animation: preloaderPulse 2s ease-in-out infinite;
 }
@@ -329,12 +340,15 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 }
 
 .logo-img {
+    display: block;
     width: 32px;
     height: 32px;
     max-width: 32px;
     max-height: 32px;
     border-radius: var(--radius-sm);
     object-fit: cover;
+    -webkit-object-fit: cover;
+    flex-shrink: 0;
 }
 
 .logo-mark {
@@ -1018,6 +1032,9 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
     height: 36px;
     max-width: 36px;
     max-height: 36px;
+    display: block;
+    object-fit: cover;
+    -webkit-object-fit: cover;
 }
 
 .footer-description {
