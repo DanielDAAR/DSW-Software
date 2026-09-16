@@ -20,7 +20,7 @@
         setTimeout(() => {
             preloader.classList.add('hidden');
             document.body.classList.remove('loading');
-        }, 1500);
+        }, 2000);
     }
 
     // ---------- Header Scroll ----------
