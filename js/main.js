@@ -239,6 +239,28 @@
         lazyImages.forEach(img => imageObserver.observe(img));
     }
 
+    // ---------- FAQ Accordion ----------
+    function initFAQ() {
+        const faqItems = document.querySelectorAll('.faq-question');
+        
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const faqItem = item.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all items
+                document.querySelectorAll('.faq-item').forEach(el => {
+                    el.classList.remove('active');
+                });
+                
+                // Toggle current item
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+    }
+
     // ---------- Event Listeners ----------
     document.addEventListener('DOMContentLoaded', () => {
         // Hide preloader
@@ -280,6 +302,9 @@
 
         // Lazy load images
         lazyLoadImages();
+
+        // FAQ accordion
+        initFAQ();
 
         // Close nav on link click
         navLinks.forEach(link => {
