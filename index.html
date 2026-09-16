@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="D.Softworks — Desarrollo de software y soluciones digitales para empresas. Creamos sistemas, páginas web y herramientas que impulsan tu negocio.">
+    <meta name="keywords" content="desarrollo de software, páginas web, sistemas empresariales, soluciones digitales, Guadalajara, México">
+    <meta name="author" content="D.Softworks">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="D.Softworks — Desarrollo de Software y Soluciones Digitales">
+    <meta property="og:description" content="Creamos sistemas, páginas web y herramientas digitales que impulsan tu negocio al siguiente nivel.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dsoftworks.netlify.app">
+    <meta property="og:image" content="img/og-image.svg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="img/icons/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="img/icons/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "D.Softworks",
+        "description": "Desarrollo de software y soluciones digitales para empresas",
+        "url": "https://dsoftworks.netlify.app",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Guadalajara",
+            "addressRegion": "Jalisco",
+            "addressCountry": "MX"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+52-33-5051-9325",
+            "contactType": "sales"
+        }
+    }
+    </script>
+    
+    <title>D.Softworks — Desarrollo de Software y Soluciones Digitales</title>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">DS</div>
+            <div class="preloader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header id="header" class="header">
+        <nav class="nav container">
+            <a href="#" class="nav-logo">
+                <span class="logo-mark">DS</span>
+                <span class="logo-text">D.Softworks</span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#inicio" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#servicios" class="nav-link">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portafolio" class="nav-link">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#proceso" class="nav-link">Proceso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacto" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+                <button class="nav-close" id="nav-close" aria-label="Cerrar menú">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <div class="nav-actions">
+                <a href="#contacto" class="btn btn-primary nav-cta">Hablemos</a>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-bg">
+                <div class="hero-grid"></div>
+                <div class="hero-glow"></div>
+            </div>
+            
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge animate-fade-up">
+                        <span class="badge-dot"></span>
+                        Desarrollo de Software a Medida
+                    </div>
+                    
+                    <h1 class="hero-title animate-fade-up" style="animation-delay: 0.1s">
+                        Construimos <span class="text-gradient">sistemas</span> que impulsan tu negocio
+                    </h1>
+                    
+                    <p class="hero-description animate-fade-up" style="animation-delay: 0.2s">
+                        No somos una plantilla más. Creamos software personalizado que se adapta 
+                        a la forma en que trabajas. Desde sistemas de gestión hasta plataformas 
+                        completas — tu visión, nuestra tecnología.
+                    </p>
+                    
+                    <div class="hero-actions animate-fade-up" style="animation-delay: 0.3s">
+                        <a href="#contacto" class="btn btn-primary btn-lg">
+                            <span>Comenzar proyecto</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#portafolio" class="btn btn-ghost btn-lg">
+                            Ver nuestro trabajo
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats animate-fade-up" style="animation-delay: 0.4s">
+                        <div class="stat">
+                            <span class="stat-number" data-count="4">0</span>
+                            <span class="stat-label">Proyectos completados</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="100">0</span><span class="stat-suffix">%</span>
+                            <span class="stat-label">Clientes satisfechos</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Soporte disponible</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual animate-fade-left" style="animation-delay: 0.2s">
+                    <div class="hero-card">
+                        <div class="card-header">
+                            <div class="card-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="card-filename">tu-sistema.js</span>
+                        </div>
+                        <pre class="card-code"><code><span class="code-keyword">const</span> <span class="code-variable">tuNegocio</span> = {
+  <span class="code-property">nombre</span>: <span class="code-string">"Tu Empresa"</span>,
+  <span class="code-property">sistema</span>: <span class="code-string">"Personalizado"</span>,
+  <span class="code-property">clientes</span>: <span class="code-string">"Creciendo"</span>,
+  <span class="code-method">potencial</span>: () => {
+    <span class="code-keyword">return</span> <span class="code-string">"Ilimitado"</span>;
+  }
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-scroll">
+                <a href="#servicios" class="scroll-indicator">
+                    <span class="scroll-text">Scroll</span>
+                    <span class="scroll-line"></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicios" class="section services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Servicios</span>
+                    <h2 class="section-title">Soluciones que se adaptan a ti</h2>
+                    <p class="section-description">
+                        No vendemos paquetes genéricos. Cada proyecto es único y se construye 
+                        según tus necesidades específicas.
+                    </p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Desarrollo Web</h3>
+                        <p class="service-description">
+                            Páginas web profesionales, plataformas y aplicaciones web completas. 
+                            Desde sitios informativos hasta sistemas complejos con base de datos.
+                        </p>
+                        <ul class="service-features">
+                            <li>Sitios responsivos y rápidos</li>
+                            <li>Integración con APIs</li>
+                            <li>SEO optimizado</li>
+                        </ul>
+                    </article>
+                    
+                    <!-- Service 2 -->
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Sistemas Empresariales</h3>
+                        <p class="service-description">
+                            Software de gestión, inventarios, facturación, CRM y más. 
+                            Sistemas que automatizan tus procesos y te ahorran tiempo.
+                        </p>
+                        <ul class="service-features">
+                            <li>Gestión de inventarios</li>
+                            <li>Facturación electrónica</li>
+                            <li>Reportes y analytics</li>
+                        </ul>
+                    </article>
+                    
+                    <!-- Service 3 -->
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                                <line x1="12" y1="18" x2="12.01" y2="18"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Aplicaciones Móviles</h3>
+                        <p class="service-description">
+                            Apps nativas e híbridas para iOS y Android. 
+                            Desde prototipos hasta aplicaciones completas con backend.
+                        </p>
+                        <ul class="service-features">
+                            <li>iOS y Android</li>
+                            <li>Sincronización en la nube</li>
+                            <li>Notificaciones push</li>
+                        </ul>
+                    </article>
+                    
+                    <!-- Service 4 -->
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Consultoría Tech</h3>
+                        <p class="service-description">
+                            Te ayudamos a definir la estrategia tecnológica de tu empresa. 
+                            Elegimos las herramientas correctas para cada necesidad.
+                        </p>
+                        <ul class="service-features">
+                            <li>Auditoría tecnológica</li>
+                            <li>Arquitectura de software</li>
+                            <li>Optimización de procesos</li>
+                        </ul>
+                    </article>
+                </div>
+                
+                <div class="services-cta">
+                    <p class="services-note">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="12" y1="16" x2="12" y2="12"/>
+                            <line x1="12" y1="8" x2="12.01" y2="8"/>
+                        </svg>
+                        Cada proyecto se cotiza según sus necesidades específicas. Sin precios fijos, sin sorpresas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portafolio" class="section portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Portafolio</span>
+                    <h2 class="section-title">Proyectos que hablan por nosotros</h2>
+                    <p class="section-description">
+                        Cada proyecto es una historia de éxito. Mira cómo hemos ayudado 
+                        a otros negocios a transformar su presencia digital.
+                    </p>
+                </div>
+                
+                <div class="portfolio-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="img/projects/gm-fire.svg" alt="GM Fire Services" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://gmfireservice.com/" target="_blank" rel="noopener" class="project-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15 3 21 3 21 9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                    Ver sitio
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Web Institucional</span>
+                                <span class="tag">Bilingüe</span>
+                            </div>
+                            <h3 class="project-title">GM Fire Services</h3>
+                            <p class="project-description">
+                                Página web corporativa para empresa de protección contra incendios 
+                                en Canadá. Sistema de catálogo de productos con certificaciones UL/FM.
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 2 -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="img/projects/dc-beauty.svg" alt="DC Beauty" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://dc-beauty.netlify.app/" target="_blank" rel="noopener" class="project-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15 3 21 3 21 9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                    Ver sitio
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Catálogo</span>
+                                <span class="tag">Calculadora</span>
+                            </div>
+                            <h3 class="project-title">DC Beauty</h3>
+                            <p class="project-description">
+                                Plataforma con catálogo de servicios, calculadora de precios 
+                                interactiva y agendamiento por WhatsApp para studio de uñas.
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 3 -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="img/projects/casa-blanca.svg" alt="Casa Blanca" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://danieldaar.github.io/Casa-Blanca/" target="_blank" rel="noopener" class="project-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15 3 21 3 21 9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                    Ver sitio
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Menú Digital</span>
+                                <span class="tag">Restaurante</span>
+                            </div>
+                            <h3 class="project-title">Casa Blanca</h3>
+                            <p class="project-description">
+                                Menú digital completo para restaurante y bar. Incluye desayunos, 
+                                comida, cena y bebidas con precios y opciones.
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 4 -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="img/projects/vitalerect.svg" alt="VitalErect" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://danieldaar.github.io/VitalErect/" target="_blank" rel="noopener" class="project-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15 3 21 3 21 9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                    Ver sitio
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Web Profesional</span>
+                                <span class="tag">Salud</span>
+                            </div>
+                            <h3 class="project-title">VitalErect</h3>
+                            <p class="project-description">
+                                Sitio web profesional para consultorio de salud masculina. 
+                                Diseño discreto y confiable que transmite profesionalismo.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="proceso" class="section process">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Proceso</span>
+                    <h2 class="section-title">Cómo trabajamos</h2>
+                    <p class="section-description">
+                        Un proceso claro y transparente. Siempre sabrás en qué paso 
+                        está tu proyecto y qué sigue.
+                    </p>
+                </div>
+                
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Diagnóstico</h3>
+                            <p class="step-description">
+                                Nos reunimos contigo para entender tu negocio, tus problemas 
+                                y tus objetivos. Escuchamos antes de proponer.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Propuesta</h3>
+                            <p class="step-description">
+                                Te presentamos una propuesta técnica y económica clara. 
+                                Sin letra pequeña, sin costos ocultos.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Desarrollo</h3>
+                            <p class="step-description">
+                                Construimos tu sistema con actualizaciones periódicas. 
+                                Puedes ver el progreso en tiempo real.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Entrega</h3>
+                            <p class="step-description">
+                                Probamos todo, te capacitamos y entregamos documentación. 
+                                Tu sistema listo para usar.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">05</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Soporte</h3>
+                            <p class="step-description">
+                                Después de entregar, seguimos ahí. Soporte técnico, 
+                                actualizaciones y mejoras continuas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="section contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <span class="section-tag">Contacto</span>
+                        <h2 class="section-title">Cuéntanos sobre tu proyecto</h2>
+                        <p class="contact-description">
+                            No importa si estás empezando o si necesitas optimizar algo existente. 
+                            Cuéntanos qué necesitas y te ayudamos a encontrar la mejor solución.
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <a href="https://wa.me/5213350519325" target="_blank" rel="noopener" class="contact-method">
+                                <div class="method-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                    </svg>
+                                </div>
+                                <div class="method-info">
+                                    <span class="method-label">WhatsApp</span>
+                                    <span class="method-value">33 5051 9325</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://github.com/DanielDAAR" target="_blank" rel="noopener" class="contact-method">
+                                <div class="method-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </div>
+                                <div class="method-info">
+                                    <span class="method-label">GitHub</span>
+                                    <span class="method-value">@DanielDAAR</span>
+                                </div>
+                            </a>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div class="method-info">
+                                    <span class="method-label">Ubicación</span>
+                                    <span class="method-value">Guadalajara, Jalisco</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company" class="form-label">Empresa</label>
+                                <input type="text" id="company" name="company" class="form-input" placeholder="Nombre de tu empresa">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service" class="form-label">¿Qué necesitas?</label>
+                                <select id="service" name="service" class="form-input form-select">
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="web">Desarrollo Web</option>
+                                    <option value="sistema">Sistema Empresarial</option>
+                                    <option value="app">Aplicación Móvil</option>
+                                    <option value="consultoria">Consultoría Tech</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Cuéntanos más</label>
+                                <textarea id="message" name="message" class="form-input form-textarea" placeholder="Describe tu proyecto o necesidad..." rows="4" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>Enviar mensaje</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"/>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-mark">DS</span>
+                        <span class="logo-text">D.Softworks</span>
+                    </a>
+                    <p class="footer-description">
+                        Desarrollo de software y soluciones digitales para empresas. 
+                        Tu visión, nuestra tecnología.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">Navegación</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#portafolio">Portafolio</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Desarrollo Web</a></li>
+                        <li><a href="#servicios">Sistemas Empresariales</a></li>
+                        <li><a href="#servicios">Apps Móviles</a></li>
+                        <li><a href="#servicios">Consultoría</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul>
+                        <li><a href="#">Aviso de privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2026 D.Softworks. Todos los derechos reservados.
+                </p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/profile.php?id=61581119766661" target="_blank" rel="noopener" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/d.softworks/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/DanielDAAR" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5213350519325" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
