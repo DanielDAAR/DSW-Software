@@ -45,6 +45,12 @@
   to = "/"
   status = 301
 
+# Form submission redirect
+[[redirects]]
+  from = "/contact"
+  to = "/success.html"
+  status = 200
+
 # Custom 404
 [[redirects]]
   from = "/*"

@@ -156,18 +156,28 @@
             return;
         }
 
-        // Simulate form submission
+        // Submit to Netlify Forms
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const originalText = submitBtn.innerHTML;
         submitBtn.innerHTML = '<span>Enviando...</span>';
         submitBtn.disabled = true;
 
-        setTimeout(() => {
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(formData).toString()
+        })
+        .then(() => {
             showToast('¡Mensaje enviado correctamente! Te contactaremos pronto.', 'success');
             contactForm.reset();
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
-        }, 1500);
+        })
+        .catch((error) => {
+            showToast('Error al enviar. Intenta de nuevo.', 'error');
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+        });
     }
 
     // ---------- Toast Notification ----------
