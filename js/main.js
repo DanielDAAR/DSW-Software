@@ -156,7 +156,7 @@
             return;
         }
 
-        // Submit to Netlify Forms
+        // Submit to Netlify Forms via fetch
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const originalText = submitBtn.innerHTML;
         submitBtn.innerHTML = '<span>Enviando...</span>';
@@ -165,16 +165,21 @@
         fetch('/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: new URLSearchParams(formData).toString()
+            body: new URLSearchParams(formData).toString(),
+            redirect: 'follow'
         })
-        .then(() => {
-            showToast('¡Mensaje enviado correctamente! Te contactaremos pronto.', 'success');
-            contactForm.reset();
-            submitBtn.innerHTML = originalText;
-            submitBtn.disabled = false;
+        .then(response => {
+            if (response.ok) {
+                showToast('¡Mensaje enviado correctamente! Te contactaremos pronto.', 'success');
+                contactForm.reset();
+            } else {
+                throw new Error('Form submission failed');
+            }
         })
         .catch((error) => {
             showToast('Error al enviar. Intenta de nuevo.', 'error');
+        })
+        .finally(() => {
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
         });
