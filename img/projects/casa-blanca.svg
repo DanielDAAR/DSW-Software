@@ -15,24 +15,24 @@
     <circle cx="60" cy="45" r="25" fill="#f3f4f6"/>
   </g>
   
-  <text x="400" y="300" font-family="Inter, sans-serif" font-size="36" font-weight="700" fill="white" text-anchor="middle">Casa Blanca</text>
-  <text x="400" y="340" font-family="Inter, sans-serif" font-size="18" fill="#a0a0b0" text-anchor="middle">Menú digital completo</text>
+  <text x="400" y="300" font-family="IBM Plex Sans, sans-serif" font-size="36" font-weight="700" fill="white" text-anchor="middle">Casa Blanca</text>
+  <text x="400" y="340" font-family="IBM Plex Sans, sans-serif" font-size="18" fill="#a0a0b0" text-anchor="middle">Menú digital completo</text>
   
   <!-- Menu sections -->
   <g transform="translate(220, 380)">
     <rect width="80" height="24" rx="4" fill="#f59e0b"/>
-    <text x="40" y="16" font-family="Inter, sans-serif" font-size="10" fill="white" text-anchor="middle">Desayunos</text>
+    <text x="40" y="16" font-family="IBM Plex Sans, sans-serif" font-size="10" fill="#0b1017" text-anchor="middle">Desayunos</text>
   </g>
   <g transform="translate(310, 380)">
     <rect width="70" height="24" rx="4" fill="#ef4444"/>
-    <text x="35" y="16" font-family="Inter, sans-serif" font-size="10" fill="white" text-anchor="middle">Comida</text>
+    <text x="35" y="16" font-family="IBM Plex Sans, sans-serif" font-size="10" fill="white" text-anchor="middle">Comida</text>
   </g>
   <g transform="translate(390, 380)">
-    <rect width="60" height="24" rx="4" fill="#8b5cf6"/>
-    <text x="30" y="16" font-family="Inter, sans-serif" font-size="10" fill="white" text-anchor="middle">Cena</text>
+    <rect width="60" height="24" rx="4" fill="#63cfe4"/>
+    <text x="30" y="16" font-family="IBM Plex Sans, sans-serif" font-size="10" fill="#0b1017" text-anchor="middle">Cena</text>
   </g>
   <g transform="translate(460, 380)">
     <rect width="70" height="24" rx="4" fill="#22d3ee"/>
-    <text x="35" y="16" font-family="Inter, sans-serif" font-size="10" fill="white" text-anchor="middle">Bebidas</text>
+    <text x="35" y="16" font-family="IBM Plex Sans, sans-serif" font-size="10" fill="#0b1017" text-anchor="middle">Bebidas</text>
   </g>
 </svg>

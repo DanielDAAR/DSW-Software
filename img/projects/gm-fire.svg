@@ -14,16 +14,16 @@
     <path d="M50 50 C50 50 75 75 75 100 C75 125 62 137 50 137 C38 137 25 125 25 100 C25 75 50 50 50 50 Z" fill="#f59e0b"/>
   </g>
   
-  <text x="400" y="320" font-family="Inter, sans-serif" font-size="36" font-weight="700" fill="white" text-anchor="middle">GM Fire Services</text>
-  <text x="400" y="360" font-family="Inter, sans-serif" font-size="18" fill="#a0a0b0" text-anchor="middle">Página web institucional bilingüe</text>
+  <text x="400" y="320" font-family="IBM Plex Sans, sans-serif" font-size="36" font-weight="700" fill="white" text-anchor="middle">GM Fire Services</text>
+  <text x="400" y="360" font-family="IBM Plex Sans, sans-serif" font-size="18" fill="#a0a0b0" text-anchor="middle">Página web institucional bilingüe</text>
   
   <!-- Certifications -->
   <g transform="translate(300, 380)">
-    <rect width="60" height="24" rx="4" fill="#6366f1"/>
-    <text x="30" y="16" font-family="Inter, sans-serif" font-size="10" fill="white" text-anchor="middle">UL Listed</text>
+    <rect width="60" height="24" rx="4" fill="#63cfe4"/>
+    <text x="30" y="16" font-family="IBM Plex Sans, sans-serif" font-size="10" fill="#0b1017" text-anchor="middle">UL Listed</text>
   </g>
   <g transform="translate(370, 380)">
     <rect width="60" height="24" rx="4" fill="#22d3ee"/>
-    <text x="30" y="16" font-family="Inter, sans-serif" font-size="10" fill="white" text-anchor="middle">FM Approved</text>
+    <text x="30" y="16" font-family="IBM Plex Sans, sans-serif" font-size="10" fill="#0b1017" text-anchor="middle">FM Approved</text>
   </g>
 </svg>

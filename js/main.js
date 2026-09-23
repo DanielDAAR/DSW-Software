@@ -217,7 +217,7 @@
         
         const progressBar = document.querySelector('.scroll-progress');
         if (progressBar) {
-            progressBar.style.width = `${scrollPercent}%`;
+            progressBar.style.transform = `scaleX(${scrollPercent / 100})`;
         }
     }
 

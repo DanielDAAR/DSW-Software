@@ -121,23 +121,6 @@
     }
 }
 
-/* ---------- Bounce Animation ---------- */
-.animate-bounce {
-    animation: bounce 2s ease infinite;
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-20px);
-    }
-    60% {
-        transform: translateY(-10px);
-    }
-}
-
 /* ---------- Pulse Animation ---------- */
 .animate-pulse {
     animation: pulse 2s ease-in-out infinite;
@@ -180,20 +163,6 @@
     }
     50% {
         transform: translateY(-20px);
-    }
-}
-
-/* ---------- Glow Animation ---------- */
-.animate-glow {
-    animation: glow 2s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-    from {
-        box-shadow: 0 0 20px var(--color-primary-glow);
-    }
-    to {
-        box-shadow: 0 0 40px var(--color-primary-glow);
     }
 }
 
