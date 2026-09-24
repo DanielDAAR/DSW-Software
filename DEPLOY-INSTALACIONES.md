@@ -1,6 +1,6 @@
-# Deploy D.Softworks a Netlify
+﻿# Deploy D.Softworks a Netlify
 
-## Tu sitio: https://dsoftworks.netlify.app
+## Tu sitio: https://danielsoftworks.netlify.app
 
 ## Pasos para deploy (2 minutos):
 
@@ -18,7 +18,7 @@ https://app.netlify.com
 
 ### 4. Espera
 - Netlify subirá los archivos (30 segundos)
-- Tu sitio estará en: https://dsoftworks.netlify.app
+- Tu sitio estará en: https://danielsoftworks.netlify.app
 
 ## Archivos del sitio:
 - index.html (página principal)

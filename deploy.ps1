@@ -1,4 +1,4 @@
-# D.Softworks — Deploy Script
+﻿# D.Softworks — Deploy Script
 # Ejecutar: ./deploy.ps1 (PowerShell) o bash deploy.sh (Linux/Mac)
 
 Write-Host "🚀 Deploying D.Softworks to Netlify..." -ForegroundColor Cyan
@@ -16,4 +16,4 @@ Write-Host "📦 Deploying to Netlify..." -ForegroundColor Green
 netlify deploy --prod --dir=. --site=dsoftworks
 
 Write-Host "✅ Deploy complete!" -ForegroundColor Green
-Write-Host "🌐 Visit: https://dsoftworks.netlify.app" -ForegroundColor Cyan
+Write-Host "🌐 Visit: https://danielsoftworks.netlify.app" -ForegroundColor Cyan

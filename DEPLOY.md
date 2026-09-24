@@ -1,4 +1,4 @@
-# Deploy Manual a Netlify
+﻿# Deploy Manual a Netlify
 
 ## Opción 1: Drag & Drop (Más rápido)
 
@@ -31,4 +31,4 @@ netlify deploy --prod --dir=. --site=dsoftworks
 ```
 
 ## URL del sitio
-https://dsoftworks.netlify.app
+https://danielsoftworks.netlify.app
