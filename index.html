@@ -3,39 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="D.Softworks — Páginas web, catálogos digitales y redes sociales para negocios locales. Presencia profesional en internet desde $1,500 MXN. Guadalajara. Cotización sin compromiso.">
-    <meta name="keywords" content="páginas web, catálogos digitales, landing page, redes sociales, negocios locales, precio página web, Guadalajara, México, D.Softworks">
+    <meta name="description" content="D.Softworks — Ingenieros directo contigo. Páginas web desde $800 MXN, catálogos en 3-4 días, sistemas y apps a la medida. Guadalajara. Cotización gratis por WhatsApp.">
+    <meta name="keywords" content="páginas web, catálogos digitales, landing page, sistemas empresariales, desarrollo web, Guadalajara, México, D.Softworks">
     <meta name="author" content="D.Softworks">
     <meta name="robots" content="index, follow">
-    
+
     <!-- Open Graph -->
     <meta property="og:title" content="D.Softworks — Soluciones Digitales para Negocios Locales">
-    <meta property="og:description" content="Página web, catálogo o redes sociales para tu negocio desde $1,500 MXN. Nosotros lo hacemos realidad, sin que gastes una fortuna.">
+    <meta property="og:description" content="Somos los ingenieros detrás de tu presencia digital. Páginas desde $800, entrega en días, precio claro.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://danielsoftworks.netlify.app">
-    <meta property="og:image" content="https://danielsoftworks.netlify.app/img/logo.jpg">
-    
+    <meta property="og:image" content="https://danielsoftworks.netlify.app/img/og-image.svg">
+
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="img/logo.jpg">
+    <link rel="icon" type="image/svg+xml" href="img/icons/favicon.svg">
     <link rel="apple-touch-icon" href="img/logo.jpg">
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Sora:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/animations.css">
-    
+
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "D.Softworks",
-        "description": "Páginas web, catálogos digitales y redes sociales para negocios locales",
+        "description": "Páginas web, catálogos digitales, sistemas empresariales y apps para negocios",
         "url": "https://danielsoftworks.netlify.app",
         "address": {
             "@type": "PostalAddress",
@@ -50,16 +50,16 @@
         }
     }
     </script>
-    
+
     <title>D.Softworks — Soluciones Digitales para Negocios Locales</title>
 </head>
 <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
     <!-- Preloader -->
     <div id="preloader" class="preloader">
         <div class="preloader-inner">
-            <div class="preloader-logo">
-                <img src="img/logo.jpg" alt="D.Softworks" class="preloader-logo-img">
-            </div>
+            <img src="img/logo.jpg" alt="D.Softworks" class="preloader-logo-img">
             <div class="preloader-bar">
                 <div class="preloader-bar-fill"></div>
             </div>
@@ -69,21 +69,17 @@
     <!-- Navigation -->
     <header id="header" class="header">
         <nav class="nav container">
-            <a href="#" class="nav-logo">
-                <img src="img/logo.jpg" alt="D.Softworks" class="logo-img">
+            <a href="#inicio" class="nav-logo">
+                <span class="logo-mark">
+                    <img src="img/logo.jpg" alt="D.Softworks" class="logo-img">
+                </span>
                 <span class="logo-text">D.Softworks</span>
             </a>
-            
+
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#inicio" class="nav-link active">Inicio</a>
-                    </li>
-                    <li class="nav-item">
                         <a href="#servicios" class="nav-link">Precios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#para-tu-giro" class="nav-link">Para tu giro</a>
                     </li>
                     <li class="nav-item">
                         <a href="#portafolio" class="nav-link">Portafolio</a>
@@ -103,7 +99,7 @@
                     <span></span>
                 </button>
             </div>
-            
+
             <div class="nav-actions">
                 <a href="https://wa.me/5213350519325?text=Hola%20D.Softworks%2C%20quiero%20una%20cotizaci%C3%B3n%20para%20mi%20negocio" target="_blank" rel="noopener" class="btn btn-primary nav-cta">Cotización gratis</a>
                 <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
@@ -116,142 +112,110 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
+        <!-- Hero -->
         <section id="inicio" class="hero">
             <div class="container hero-container">
-                <div class="hero-content">
-                    <div class="hero-badge animate-fade-up">
-                        <span class="badge-dot"></span>
-                        Soluciones Digitales para Negocios Locales
-                    </div>
-                    
-                    <h1 class="hero-title animate-fade-up" style="animation-delay: 0.1s">
-                        Tu negocio merece verse <span class="text-gradient">profesional en internet</span>
+                <div class="hero-content animate-fade-up">
+                    <h1 class="hero-title">
+                        Somos los ingenieros detrás de tu <span class="hero-accent">presencia digital</span>
                     </h1>
-                    
-                    <p class="hero-description animate-fade-up" style="animation-delay: 0.2s">
-                        Página web, catálogo o redes sociales listos para ti. Presencia profesional 
-                        en internet <strong>desde $1,500 MXN</strong>, sin agencias, sin complicaciones 
-                        y sin que gastes una fortuna. Tú vendes, nosotros nos encargamos del resto.
+
+                    <p class="hero-description">
+                        Página web, catálogo, sistema o app a la medida. Precio claro, entrega en días y hablas
+                        directo con el equipo que lo construye.
                     </p>
-                    
-                    <div class="hero-actions animate-fade-up" style="animation-delay: 0.3s">
+
+                    <div class="hero-actions">
                         <a href="https://wa.me/5213350519325?text=Hola%20D.Softworks%2C%20quiero%20una%20cotizaci%C3%B3n%20para%20mi%20negocio" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
-                            <span>Cotización gratis por WhatsApp</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <span>Cotiza gratis por WhatsApp</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                             </svg>
                         </a>
-                        <a href="#servicios" class="btn btn-ghost btn-lg">
-                            Ver precios
-                        </a>
+                        <a href="#servicios" class="btn btn-ghost btn-lg">Ver precios</a>
                     </div>
-                    
-                    <div class="hero-stats animate-fade-up" style="animation-delay: 0.4s">
-                        <div class="stat">
-                            <span class="stat-number">$800</span>
-                            <span class="stat-label">Desde MXN</span>
+
+                    <dl class="hero-facts">
+                        <div class="hero-fact">
+                            <dt>Desde</dt>
+                            <dd>$800 MXN</dd>
                         </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat">
-                            <span class="stat-number">3-7 días</span>
-                            <span class="stat-label">Entrega express</span>
+                        <div class="hero-fact">
+                            <dt>Entrega</dt>
+                            <dd>3–7 días</dd>
                         </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat">
-                            <span class="stat-number">GDL</span>
-                            <span class="stat-label">Guadalajara y alrededores</span>
+                        <div class="hero-fact">
+                            <dt>Zona</dt>
+                            <dd>Guadalajara y todo México</dd>
                         </div>
-                    </div>
+                    </dl>
                 </div>
-                
-                <div class="hero-visual animate-fade-left" style="animation-delay: 0.2s">
-                    <div class="hero-card">
-                        <div class="card-header">
-                            <div class="card-dots">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <span class="card-filename">tu-negocio-web</span>
+
+                <div class="hero-showcase animate-fade-right">
+                    <div class="browser">
+                        <div class="browser-bar">
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                            <span class="browser-url">gmfireservice.com</span>
+                            <span class="browser-badge">Hecho por D.Softworks</span>
                         </div>
-                        <pre class="card-code"><code><span class="code-keyword">const</span> <span class="code-variable">tuNegocio</span> = {
-  <span class="code-property">web</span>: <span class="code-string">"Profesional"</span>,
-  <span class="code-property">precio</span>: <span class="code-string">"$1,500 MXN"</span>,
-  <span class="code-property">cliente</span>: <span class="code-string">"Tú 🚀"</span>,
-  <span class="code-method">presenteEnLinea</span>: () => {
-    <span class="code-keyword">return</span> <span class="code-string">"Sí, desde hoy"</span>;
-  }
-};</code></pre>
+                        <div class="browser-shot">
+                            <img src="img/projects/gm-fire.png" alt="Sitio web real de GM Fire Services, hecho por D.Softworks" loading="lazy">
+                        </div>
                     </div>
+                    <p class="browser-caption">GM Fire Services — sitio B2B bilingüe, en línea hoy.</p>
                 </div>
-            </div>
-            
-            <div class="hero-scroll">
-                <a href="#servicios" class="scroll-indicator">
-                    <span class="scroll-text">Scroll</span>
-                    <span class="scroll-line"></span>
-                </a>
             </div>
         </section>
 
-        <!-- Services Section -->
+        <!-- Services -->
         <section id="servicios" class="section services">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Servicios</span>
                     <h2 class="section-title">Precios claros, soluciones reales</h2>
                     <p class="section-description">
-                        Saber cuánto cuesta un sitio no debería ser un misterio. 
-                        Estos son los precios, sin letra pequeña. Si necesitas algo 
-                        más grande, te cotizamos en 24 horas por WhatsApp.
+                        Saber cuánto cuesta no debería ser un misterio. Estos son los precios, sin letra pequeña.
+                        Si necesitas algo más grande, te cotizamos en 24 horas por WhatsApp.
                     </p>
                 </div>
-                
+
                 <div class="services-grid">
-                    <!-- Service 1 -->
                     <article class="service-card">
                         <div class="service-head">
-                            <div class="service-icon">
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                                    <line x1="8" y1="21" x2="16" y2="21"/>
-                                    <line x1="12" y1="17" x2="12" y2="21"/>
-                                </svg>
-                            </div>
+                            <svg class="service-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
                             <h3 class="service-title">Desarrollo Web</h3>
-                            <span class="service-price">Desde $800 MXN</span>
+                            <span class="service-price">Desde $800</span>
                         </div>
                         <p class="service-description">
-                            Páginas web profesionales para negocios locales. 
-                            Desde un catálogo hasta un sitio completo con tu información, 
-                            WhatsApp y redes sociales.
+                            Páginas profesionales para negocios locales: un catálogo, una landing o un sitio
+                            completo con tu información y WhatsApp.
                         </p>
                         <ul class="service-features">
-                            <li>Catálogo $800 · Página $1,500 · Landing $1,200</li>
+                            <li>Catálogo $800 · Landing $1,200 · Página $1,500</li>
                             <li>Hosting + SSL gratis incluidos</li>
                             <li>Botón directo a WhatsApp</li>
                         </ul>
                         <a href="https://wa.me/5213350519325?text=Hola%20D.Softworks%2C%20me%20interesa%20una%20p%C3%A1gina%20web%20para%20mi%20negocio" target="_blank" rel="noopener" class="service-cta">Cotizar página web →</a>
                     </article>
-                    
-                    <!-- Service 2 -->
+
                     <article class="service-card">
                         <div class="service-head">
-                            <div class="service-icon">
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                                    <path d="M2 17l10 5 10-5"/>
-                                    <path d="M2 12l10 5 10-5"/>
-                                </svg>
-                            </div>
+                            <svg class="service-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
                             <h3 class="service-title">Sistemas Empresariales</h3>
-                            <span class="service-price">Cotización a medida</span>
+                            <span class="service-price">A medida</span>
                         </div>
                         <p class="service-description">
-                            Software que automatiza tus procesos: inventarios, 
-                            reservaciones, pedidos, CRM. Un sistema hecho para 
-                            cómo trabaja tu negocio.
+                            Software que automatiza tus procesos: inventarios, reservaciones, pedidos o CRM.
+                            Un sistema hecho para cómo trabaja tu negocio.
                         </p>
                         <ul class="service-features">
                             <li>Gestión de inventarios</li>
@@ -260,22 +224,19 @@
                         </ul>
                         <a href="https://wa.me/5213350519325?text=Hola%20D.Softworks%2C%20necesito%20un%20sistema%20para%20mi%20negocio" target="_blank" rel="noopener" class="service-cta">Pedir cotización →</a>
                     </article>
-                    
-                    <!-- Service 3 -->
+
                     <article class="service-card">
                         <div class="service-head">
-                            <div class="service-icon">
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-                                    <line x1="12" y1="18" x2="12.01" y2="18"/>
-                                </svg>
-                            </div>
+                            <svg class="service-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                                <line x1="12" y1="18" x2="12.01" y2="18"/>
+                            </svg>
                             <h3 class="service-title">Aplicaciones Móviles</h3>
-                            <span class="service-price">Desde $8,000 MXN</span>
+                            <span class="service-price">Desde $8,000</span>
                         </div>
                         <p class="service-description">
-                            Apps nativas e híbridas para iOS y Android. 
-                            Para cuando tu negocio necesita una app de verdad.
+                            Apps para iOS y Android, para cuando tu negocio necesita una app de verdad,
+                            con datos en la nube.
                         </p>
                         <ul class="service-features">
                             <li>iOS y Android</li>
@@ -284,23 +245,19 @@
                         </ul>
                         <a href="https://wa.me/5213350519325?text=Hola%20D.Softworks%2C%20me%20interesa%20una%20app%20m%C3%B3vil" target="_blank" rel="noopener" class="service-cta">Cotizar app →</a>
                     </article>
-                    
-                    <!-- Service 4 -->
+
                     <article class="service-card">
                         <div class="service-head">
-                            <div class="service-icon">
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                    <circle cx="12" cy="12" r="3"/>
-                                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
-                                </svg>
-                            </div>
+                            <svg class="service-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                            </svg>
                             <h3 class="service-title">Consultoría Tech</h3>
-                            <span class="service-price">$500 MXN/hora</span>
+                            <span class="service-price">$500/hr</span>
                         </div>
                         <p class="service-description">
-                            Te ayudamos a elegir la herramienta correcta y a 
-                            aprovechar la tecnología para vender más. 
-                            Una hora puede ahorrarte meses de errores.
+                            Elegimos la herramienta correcta para tu caso. Una hora puede
+                            ahorrarte meses de errores.
                         </p>
                         <ul class="service-features">
                             <li>Auditoría tecnológica</li>
@@ -310,169 +267,45 @@
                         <a href="https://wa.me/5213350519325?text=Hola%20D.Softworks%2C%20quiero%20una%20asesor%C3%ADa%20tech" target="_blank" rel="noopener" class="service-cta">Agendar asesoría →</a>
                     </article>
                 </div>
-                
-                <div class="services-cta">
-                    <p class="services-note">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <line x1="12" y1="16" x2="12" y2="12"/>
-                            <line x1="12" y1="8" x2="12.01" y2="8"/>
-                        </svg>
-                        Anticipo 50% · saldo contra entrega · Transferencia o efectivo · Cotización válida 15 días
-                    </p>
-                </div>
+
+                <p class="services-note">
+                    Anticipo 50% · saldo contra entrega · transferencia o efectivo · cotización válida 15 días
+                </p>
             </div>
         </section>
 
-        <!-- Giro Section -->
-        <section id="para-tu-giro" class="section giro">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">Para tu giro</span>
-                    <h2 class="section-title">Hecho para negocios como el tuyo</h2>
-                    <p class="section-description">
-                        Empezamos con negocios locales: los que venden todos los días 
-                        con las manos. Si tienes uno de estos giros, tu caso lo hemos 
-                        visto antes — y cuando necesites escalar a un sistema o a 
-                        soluciones más grandes, también podemos.
-                    </p>
-                </div>
-                
-                <div class="giro-grid">
-                    <article class="giro-card">
-                        <div class="giro-image">
-                            <img src="img/projects/vitalerect.png" alt="Proyecto para clínica" loading="lazy">
-                        </div>
-                        <div class="giro-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M19 4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/>
-                                <path d="M16 2v4M8 2v4M3 10h18M12 15l-1.5-1.5M12 15l-1.5 1.5"/>
-                            </svg>
-                        </div>
-                        <h3 class="giro-title">Clínicas y consultorios</h3>
-                        <p class="giro-description">
-                            Botón de WhatsApp para citas, horarios visibles, 
-                            mapa para llegar y una imagen limpia que da confianza.
-                        </p>
-                    </article>
-                    
-                    <article class="giro-card">
-                        <div class="giro-image">
-                            <img src="img/projects/casa-blanca.png" alt="Menú digital para restaurante" loading="lazy">
-                        </div>
-                        <div class="giro-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M3 11l19-9-9 19-2-8-8-2z"/>
-                            </svg>
-                        </div>
-                        <h3 class="giro-title">Restaurantes y bares</h3>
-                        <p class="giro-description">
-                            Menú digital con precios para que pidan directo. 
-                            Los clientes ya no buscan tu menú en Facebook.
-                        </p>
-                    </article>
-                    
-                    <article class="giro-card">
-                        <div class="giro-image">
-                            <img src="img/projects/dc-beauty.png" alt="Catálogo para estudio de belleza" loading="lazy">
-                        </div>
-                        <div class="giro-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/>
-                            </svg>
-                        </div>
-                        <h3 class="giro-title">Belleza y estética</h3>
-                        <p class="giro-description">
-                            Catálogo de tu menú de servicios con precios, galería 
-                            de tu trabajo y agendamiento directo por WhatsApp.
-                        </p>
-                    </article>
-                    
-                    <article class="giro-card">
-                        <div class="giro-image">
-                            <img src="img/projects/gm-fire.png" alt="Web para taller y servicios" loading="lazy">
-                        </div>
-                        <div class="giro-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                                <line x1="16" y1="21" x2="8" y2="21"/>
-                                <line x1="16" y1="3" x2="8" y2="3"/>
-                            </svg>
-                        </div>
-                        <h3 class="giro-title">Talleres y servicios</h3>
-                        <p class="giro-description">
-                            Muestra tus precios y servicios, redes sociales 
-                            integradas y la confianza que los clientes buscan.
-                        </p>
-                    </article>
-                </div>
-                
-                <div class="giro-cta">
-                    <a href="https://wa.me/5213350519325?text=Hola%20D.Softworks%2C%20tengo%20un%20negocio%20local%20y%20quiero%20verme%20profesional%20en%20internet" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
-                        <span>Hablemos de tu negocio</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Portfolio Section -->
+        <!-- Portfolio -->
         <section id="portafolio" class="section portfolio">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Portafolio</span>
-                    <h2 class="section-title">Proyectos que hablan por nosotros</h2>
+                    <h2 class="section-title">Proyectos reales, en línea hoy</h2>
                     <p class="section-description">
-                        Cada proyecto es una historia de éxito. Mira cómo hemos ayudado 
-                        a otros negocios a transformar su presencia digital.
+                        Nada de conceptos. Esto es lo que ya está publicado y funcionando, con URL para que lo veas tú mismo.
                     </p>
                 </div>
-                
+
                 <div class="portfolio-grid">
-                    <!-- Project 1 -->
-                    <article class="project-card" data-category="web">
+                    <article class="project-card">
                         <div class="project-image">
                             <img src="img/projects/gm-fire.png" alt="GM Fire Services" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://gmfireservice.com/" target="_blank" rel="noopener" class="project-link">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                        <polyline points="15 3 21 3 21 9"/>
-                                        <line x1="10" y1="14" x2="21" y2="3"/>
-                                    </svg>
-                                    Ver sitio
-                                </a>
-                            </div>
                         </div>
                         <div class="project-info">
                             <div class="project-tags">
-                                <span class="tag">Web Institucional</span>
+                                <span class="tag">Web institucional</span>
                                 <span class="tag">Bilingüe</span>
                             </div>
                             <h3 class="project-title">GM Fire Services</h3>
                             <p class="project-description">
-                                Página web corporativa para empresa de protección contra incendios 
-                                en Canadá. Sistema de catálogo de productos con certificaciones UL/FM.
+                                Sitio corporativo B2B para una empresa de protección contra incendios en Canadá,
+                                con catálogo de productos certificados UL/FM.
                             </p>
+                            <a href="https://gmfireservice.com/" target="_blank" rel="noopener" class="project-link">Ver sitio en vivo →</a>
                         </div>
                     </article>
-                    
-                    <!-- Project 2 -->
-                    <article class="project-card" data-category="web">
+
+                    <article class="project-card">
                         <div class="project-image">
                             <img src="img/projects/dc-beauty.png" alt="DC Beauty" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://dc-beauty.netlify.app/" target="_blank" rel="noopener" class="project-link">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                        <polyline points="15 3 21 3 21 9"/>
-                                        <line x1="10" y1="14" x2="21" y2="3"/>
-                                    </svg>
-                                    Ver sitio
-                                </a>
-                            </div>
                         </div>
                         <div class="project-info">
                             <div class="project-tags">
@@ -481,187 +314,161 @@
                             </div>
                             <h3 class="project-title">DC Beauty</h3>
                             <p class="project-description">
-                                Plataforma con catálogo de servicios, calculadora de precios 
-                                interactiva y agendamiento por WhatsApp para studio de uñas.
+                                Catálogo de servicios con calculadora de precios interactiva y agendamiento
+                                por WhatsApp para un estudio de uñas.
                             </p>
+                            <a href="https://dc-beauty.netlify.app/" target="_blank" rel="noopener" class="project-link">Ver sitio en vivo →</a>
                         </div>
                     </article>
-                    
-                    <!-- Project 3 -->
-                    <article class="project-card" data-category="web">
+
+                    <article class="project-card">
                         <div class="project-image">
                             <img src="img/projects/casa-blanca.png" alt="Casa Blanca" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://danieldaar.github.io/Casa-Blanca/" target="_blank" rel="noopener" class="project-link">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                        <polyline points="15 3 21 3 21 9"/>
-                                        <line x1="10" y1="14" x2="21" y2="3"/>
-                                    </svg>
-                                    Ver sitio
-                                </a>
-                            </div>
                         </div>
                         <div class="project-info">
                             <div class="project-tags">
-                                <span class="tag">Menú Digital</span>
+                                <span class="tag">Menú digital</span>
                                 <span class="tag">Restaurante</span>
                             </div>
                             <h3 class="project-title">Casa Blanca</h3>
                             <p class="project-description">
-                                Menú digital completo para restaurante y bar. Incluye desayunos, 
-                                comida, cena y bebidas con precios y opciones.
+                                Menú digital completo para restaurante y bar: desayunos, comida, cena y bebidas
+                                con precios visibles en el celular del cliente.
                             </p>
+                            <a href="https://danieldaar.github.io/Casa-Blanca/" target="_blank" rel="noopener" class="project-link">Ver sitio en vivo →</a>
                         </div>
                     </article>
-                    
-                    <!-- Project 4 -->
-                    <article class="project-card" data-category="web">
+
+                    <article class="project-card">
                         <div class="project-image">
                             <img src="img/projects/vitalerect.png" alt="VitalErect" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://danieldaar.github.io/VitalErect/" target="_blank" rel="noopener" class="project-link">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                        <polyline points="15 3 21 3 21 9"/>
-                                        <line x1="10" y1="14" x2="21" y2="3"/>
-                                    </svg>
-                                    Ver sitio
-                                </a>
-                            </div>
                         </div>
                         <div class="project-info">
                             <div class="project-tags">
-                                <span class="tag">Web Profesional</span>
+                                <span class="tag">Web profesional</span>
                                 <span class="tag">Salud</span>
                             </div>
                             <h3 class="project-title">VitalErect</h3>
                             <p class="project-description">
-                                Sitio web profesional para consultorio de salud masculina. 
-                                Diseño discreto y confiable que transmite profesionalismo.
+                                Consultorio de salud masculina con una web discreta y confiable que
+                                transmite profesionalismo antes de la primera llamada.
                             </p>
+                            <a href="https://danieldaar.github.io/VitalErect/" target="_blank" rel="noopener" class="project-link">Ver sitio en vivo →</a>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- Why Us Section -->
+        <!-- Why -->
         <section id="porque" class="section why">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Por qué D.Softworks</span>
                     <h2 class="section-title">Ingenieros, directo contigo</h2>
                     <p class="section-description">
-                        Desde el catálogo de un negocio local hasta el software 
-                        de una gran empresa: somos un equipo de ingenieros que 
-                        entrega con precios justos, en tiempos reales.
+                        Desde el catálogo de un negocio local hasta el sistema de una gran empresa:
+                        un equipo que entrega con precios justos y tiempos reales.
                     </p>
                 </div>
-                
+
                 <div class="why-grid">
                     <div class="why-item">
-                        <div class="why-number">1</div>
                         <h3 class="why-title">Precio justo, sin inflado</h3>
                         <p class="why-description">
-                            Te cobramos lo justo, sea una página o un sistema grande, 
-                            y te explicamos en qué se va cada peso.
+                            Te cobramos lo justo, sea una página o un sistema grande, y te explicamos
+                            en qué se va cada peso.
                         </p>
                     </div>
                     <div class="why-item">
-                        <div class="why-number">2</div>
                         <h3 class="why-title">Entregas realistas</h3>
                         <p class="why-description">
-                            Una página lista en días. Un sistema, con plan y avances 
-                            por etapas. Sin fechas que no se cumplen.
+                            Una página lista en días. Un sistema, con plan y avances por etapas.
+                            Sin fechas que no se cumplen.
                         </p>
                     </div>
                     <div class="why-item">
-                        <div class="why-number">3</div>
-                        <h3 class="why-title">Hablas directo con ingenieros</h3>
+                        <h3 class="why-title">Hablas con quien lo hace</h3>
                         <p class="why-description">
-                            Nada de vendedores que prometen y luego no saben 
-                            el estado de tu proyecto. Hablas con quien lo hace.
+                            Sin vendedores que prometen y luego no saben el estado de tu proyecto.
+                            Hablas directo con los ingenieros.
                         </p>
                     </div>
                     <div class="why-item">
-                        <div class="why-number">4</div>
                         <h3 class="why-title">Sin contratos ni sorpresas</h3>
                         <p class="why-description">
-                            Anticipo 50%, saldo contra entrega. Si no te gusta 
-                            el avance, lo ajustamos antes de que termines de pagar.
+                            Anticipo 50%, saldo contra entrega. Si no te gusta el avance, lo ajustamos
+                            antes de que termines de pagar.
                         </p>
                     </div>
                 </div>
 
-                <div class="why-media">
-                    <figure class="why-media-item why-media-large">
-                        <img src="img/stock/equipo-trabajo.jpg" alt="El equipo de D.Softworks trabajando" loading="lazy">
-                    </figure>
-                    <figure class="why-media-item">
-                        <img src="img/stock/codigo.jpg" alt="Código de nuestros sistemas" loading="lazy">
-                    </figure>
-                    <figure class="why-media-item">
-                        <img src="img/stock/reunion.jpg" alt="Reunión de trabajo con clientes" loading="lazy">
-                    </figure>
-                    <figure class="why-media-item">
-                        <img src="img/stock/equipo-office.jpg" alt="Oficina de D.Softworks" loading="lazy">
-                    </figure>
+                <div class="tech-strip">
+                    <h3 class="tech-strip-title">Tecnologías que usamos</h3>
+                    <ul class="tech-chips">
+                        <li>React</li>
+                        <li>Next.js</li>
+                        <li>TypeScript</li>
+                        <li>Node.js</li>
+                        <li>Python</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>React Native</li>
+                        <li>AWS</li>
+                        <li>Netlify</li>
+                        <li>Docker</li>
+                        <li>Git</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Process Section -->
+        <!-- Process -->
         <section id="proceso" class="section process">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Proceso</span>
                     <h2 class="section-title">Tu página en 3 pasos</h2>
                     <p class="section-description">
-                        Nada de procesos eternos. Así de simple funciona 
-                        trabajar con nosotros.
+                        Nada de procesos eternos. Así de simple es trabajar con nosotros.
                     </p>
                 </div>
-                
-                <div class="process-timeline">
-                    <div class="process-step">
-                        <div class="step-number">01</div>
+
+                <ol class="process-timeline">
+                    <li class="process-step">
+                        <span class="step-number" aria-hidden="true">1</span>
                         <div class="step-content">
                             <h3 class="step-title">Cuéntanos tu negocio</h3>
                             <p class="step-description">
-                                Escríbenos por WhatsApp: nombre de tu negocio, 
-                                qué vendes y qué necesitas. Te cotizamos el mismo día.
+                                Escríbenos por WhatsApp: qué vendes y qué necesitas.
+                                Te cotizamos el mismo día.
                             </p>
                         </div>
-                    </div>
-                    
-                    <div class="process-step">
-                        <div class="step-number">02</div>
+                    </li>
+                    <li class="process-step">
+                        <span class="step-number" aria-hidden="true">2</span>
                         <div class="step-content">
                             <h3 class="step-title">Lo hacemos</h3>
                             <p class="step-description">
-                                Anticipo 50% y construimos tu página en 3 a 7 días. 
+                                Anticipo 50% y construimos tu página en 3 a 7 días.
                                 Te enviamos un enlace para ver el avance en vivo.
                             </p>
                         </div>
-                    </div>
-                    
-                    <div class="process-step">
-                        <div class="step-number">03</div>
+                    </li>
+                    <li class="process-step">
+                        <span class="step-number" aria-hidden="true">3</span>
                         <div class="step-content">
                             <h3 class="step-title">Está en línea</h3>
                             <p class="step-description">
-                                Pagas el saldo y tu página queda publicada, con 
-                                hosting y SSL incluidos. Ya nadie dice que no te puede encontrar.
+                                Pagas el saldo y tu página queda publicada con hosting y SSL.
+                                Ya nadie dice que no te puede encontrar.
                             </p>
                         </div>
-                    </div>
-                </div>
-                
+                    </li>
+                </ol>
+
                 <div class="process-cta">
                     <a href="https://wa.me/5213350519325?text=Hola%20D.Softworks%2C%20quiero%20entrar%20al%20paso%201%3A%20tengo%20un%20negocio%20y%20necesito%20una%20p%C3%A1gina" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
                         <span>Empezar el paso 1</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                     </a>
@@ -669,209 +476,16 @@
             </div>
         </section>
 
-        <!-- Technologies Section -->
-        <section id="tecnologias" class="section technologies">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">Tech Stack</span>
-                    <h2 class="section-title">Tecnologías que dominamos</h2>
-                    <p class="section-description">
-                        Somos ingenieros: elegimos la herramienta correcta para cada proyecto. 
-                        Frontend, backend, móvil, datos y cloud.
-                    </p>
-                </div>
-                
-                <div class="tech-grid">
-                    <div class="tech-category">
-                        <h3 class="tech-category-title">Frontend</h3>
-                        <div class="tech-items">
-                            <div class="tech-item">
-                                <span class="tech-name">React</span>
-                            </div>
-                            <div class="tech-item">
-                                <span class="tech-name">Vue.js</span>
-                            </div>
-                            <div class="tech-item">
-                                <span class="tech-name">Next.js</span>
-                            </div>
-                            <div class="tech-item">
-                                <span class="tech-name">TypeScript</span>
-                            </div>
-                            <div class="tech-item">
-                                <span class="tech-name">HTML/CSS/JS</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="tech-category">
-                        <h3 class="tech-category-title">Backend</h3>
-                        <div class="tech-items">
-                            <div class="tech-item">
-                                <span class="tech-name">Node.js</span>
-                            </div>
-                            <div class="tech-item">
-                                <span class="tech-name">Python</span>
-                            </div>
-                            <div class="tech-item">
-                                <span class="tech-name">PHP</span>
-                            </div>
-                            <div class="tech-item">
-                                <span class="tech-name">Express</span>
-                            </div>
-                            <div class="tech-item">
-                                <span class="tech-name">APIs REST</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="tech-category">
-                        <h3 class="tech-category-title">Bases de Datos</h3>
-                        <div class="tech-items">
-                            <div class="tech-item">
-                                <span class="tech-name">PostgreSQL</span>
-                            </div>
-                            <div class="tech-item">
-                                <span class="tech-name">MongoDB</span>
-                            </div>
-                            <div class="tech-item">
-                                <span class="tech-name">MySQL</span>
-                            </div>
-                            <div class="tech-item">
-                                <span class="tech-name">Supabase</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="tech-category">
-                        <h3 class="tech-category-title">Cloud & DevOps</h3>
-                        <div class="tech-items">
-                            <div class="tech-item">
-                                <span class="tech-name">AWS</span>
-                            </div>
-                            <div class="tech-item">
-                                <span class="tech-name">Netlify</span>
-                            </div>
-                            <div class="tech-item">
-                                <span class="tech-name">Vercel</span>
-                            </div>
-                            <div class="tech-item">
-                                <span class="tech-name">Docker</span>
-                            </div>
-                            <div class="tech-item">
-                                <span class="tech-name">GitHub</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="tech-category">
-                        <h3 class="tech-category-title">Móvil</h3>
-                        <div class="tech-items">
-                            <div class="tech-item">
-                                <span class="tech-name">React Native</span>
-                            </div>
-                            <div class="tech-item">
-                                <span class="tech-name">Flutter</span>
-                            </div>
-                            <div class="tech-item">
-                                <span class="tech-name">Expo</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="tech-category">
-                        <h3 class="tech-category-title">Herramientas</h3>
-                        <div class="tech-items">
-                            <div class="tech-item">
-                                <span class="tech-name">Git</span>
-                            </div>
-                            <div class="tech-item">
-                                <span class="tech-name">Figma</span>
-                            </div>
-                            <div class="tech-item">
-                                <span class="tech-name">VS Code</span>
-                            </div>
-                            <div class="tech-item">
-                                <span class="tech-name">Postman</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Case Study Section -->
-        <section id="caso-exito" class="section case-study">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">Caso de Éxito</span>
-                    <h2 class="section-title">GM Fire Services</h2>
-                    <p class="section-description">
-                        Cómo ayudamos a una empresa canadiense a digitalizar 
-                        su catálogo de productos de protección contra incendios.
-                    </p>
-                </div>
-                
-                <div class="case-grid">
-                    <div class="case-image">
-                        <img src="img/projects/gm-fire.png" alt="GM Fire Services" loading="lazy">
-                    </div>
-                    <div class="case-content">
-                        <div class="case-challenge">
-                            <h3>El Reto</h3>
-                            <p>
-                                GM Fire Services necesitaba una página web profesional 
-                                que mostrara su catálogo de productos con certificaciones 
-                                UL/FM. El sitio anterior era obsoleto y no generaba confianza.
-                            </p>
-                        </div>
-                        <div class="case-solution">
-                            <h3>Nuestra Solución</h3>
-                            <p>
-                                Desarrollamos un sitio web bilingüe (inglés/español) con 
-                                diseño oscuro y profesional. Incluimos catálogo de productos, 
-                                sistema de certificaciones y formulario de contacto.
-                            </p>
-                        </div>
-                        <div class="case-results">
-                            <h3>Resultados</h3>
-                            <div class="case-stats">
-                                <div class="case-stat">
-                                    <span class="case-stat-value">EN/ES</span>
-                                    <span class="case-stat-label">Sitio bilingüe</span>
-                                </div>
-                                <div class="case-stat">
-                                    <span class="case-stat-value">UL/FM</span>
-                                    <span class="case-stat-label">Catálogo certificado</span>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="https://gmfireservice.com/" target="_blank" rel="noopener" class="btn btn-primary">
-                            Ver sitio en vivo
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                <polyline points="15 3 21 3 21 9"/>
-                                <line x1="10" y1="14" x2="21" y2="3"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
+        <!-- Testimonials -->
         <section id="testimonios" class="section testimonials">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Testimonios</span>
-                    <h2 class="section-title">Lo que dicen nuestros clientes</h2>
-                    <p class="section-description">
-                        La satisfacción de nuestros clientes es nuestra mejor carta de presentación.
-                    </p>
+                    <h2 class="section-title">Lo que dicen los clientes</h2>
                 </div>
-                
+
                 <div class="testimonials-grid">
                     <div class="testimonial-card">
-                        <div class="testimonial-stars">
+                        <div class="testimonial-stars" aria-hidden="true">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -879,20 +493,20 @@
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         </div>
                         <p class="testimonial-text">
-                            "D.Softworks transformó nuestra presencia digital. El sitio web superó 
-                            nuestras expectativas y el catálogo ahora se ve profesional y confiable."
+                            “D.Softworks transformó nuestra presencia digital. El sitio superó nuestras
+                            expectativas y el catálogo ahora se ve profesional y confiable.”
                         </p>
                         <div class="testimonial-author">
-                            <div class="author-avatar">GM</div>
+                            <span class="author-avatar" aria-hidden="true">GM</span>
                             <div class="author-info">
                                 <span class="author-name">Gerencia GM Fire</span>
                                 <span class="author-company">GM Fire Services</span>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="testimonial-card">
-                        <div class="testimonial-stars">
+                        <div class="testimonial-stars" aria-hidden="true">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -900,20 +514,20 @@
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         </div>
                         <p class="testimonial-text">
-                            "El menú digital que nos crearon es increíble. Nuestros clientes 
-                            pueden ver todo el menú desde su celular. ¡Ha sido un cambio total!"
+                            “El menú digital que nos crearon es increíble. Nuestros clientes pueden ver
+                            todo el menú desde su celular. Ha sido un cambio total.”
                         </p>
                         <div class="testimonial-author">
-                            <div class="author-avatar">CB</div>
+                            <span class="author-avatar" aria-hidden="true">CB</span>
                             <div class="author-info">
                                 <span class="author-name">Restaurante Casa Blanca</span>
                                 <span class="author-company">Cihuatlán, Jalisco</span>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="testimonial-card">
-                        <div class="testimonial-stars">
+                        <div class="testimonial-stars" aria-hidden="true">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -921,14 +535,14 @@
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         </div>
                         <p class="testimonial-text">
-                            "Profesionales, puntuales y con excelente comunicación. 
-                            Nuestra web de salud se ve seria y confiable como necesitábamos."
+                            “Profesionales, puntuales y con excelente comunicación. Nuestra web de salud
+                            se ve seria y confiable como lo necesitábamos.”
                         </p>
                         <div class="testimonial-author">
-                            <div class="author-avatar">VE</div>
+                            <span class="author-avatar" aria-hidden="true">VE</span>
                             <div class="author-info">
                                 <span class="author-name">Consultorio VitalErect</span>
-                                <span class="author-company">Salud Masculina</span>
+                                <span class="author-company">Salud masculina</span>
                             </div>
                         </div>
                     </div>
@@ -936,104 +550,100 @@
             </div>
         </section>
 
-        <!-- FAQ Section -->
+        <!-- FAQ -->
         <section id="faq" class="section faq">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">FAQ</span>
                     <h2 class="section-title">Preguntas frecuentes</h2>
-                    <p class="section-description">
-                        Resolvemos tus dudas antes de que las tengas.
-                    </p>
                 </div>
-                
-                <div class="faq-grid">
+
+                <div class="faq-list">
                     <div class="faq-item">
                         <button class="faq-question">
                             <span>¿Cuánto cuesta un sitio web?</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
                         <div class="faq-answer">
                             <p>
-                                Catálogo digital $800 · Landing page $1,200 · Página web $1,500. 
-                                Hosting y SSL gratis por un año. Sistemas y apps se cotizan a medida, 
+                                Catálogo digital $800 · Landing page $1,200 · Página web $1,500.
+                                Hosting y SSL gratis por un año. Sistemas y apps se cotizan a medida,
                                 sin letra pequeña.
                             </p>
                         </div>
                     </div>
-                    
+
                     <div class="faq-item">
                         <button class="faq-question">
                             <span>¿Cuánto tarda en estar listo?</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
                         <div class="faq-answer">
                             <p>
-                                Catálogos 3-4 días, landings 3-5 días, páginas web 5-7 días hábiles. 
+                                Catálogos 3-4 días, landings 3-5 días, páginas web 5-7 días hábiles.
                                 Te compartimos un enlace para ver el avance en vivo.
                             </p>
                         </div>
                     </div>
-                    
+
                     <div class="faq-item">
                         <button class="faq-question">
                             <span>¿Trabajan con negocios de Guadalajara?</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
                         <div class="faq-answer">
                             <p>
-                                Claro. Atendemos en Guadalajara y zona metropolitana, 
-                                y también a todo México por videollamada.
+                                Claro. Atendemos en Guadalajara y zona metropolitana, y también
+                                a todo México por videollamada.
                             </p>
                         </div>
                     </div>
-                    
+
                     <div class="faq-item">
                         <button class="faq-question">
                             <span>¿Qué necesito para empezar?</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
                         <div class="faq-answer">
                             <p>
-                                Solo el 50% de anticipo y tu teléfono. Fotos, textos y colores 
-                                los podemos usar de tu Facebook o Instagram existentes.
+                                Solo el 50% de anticipo y tu teléfono. Fotos, textos y colores los podemos
+                                usar de tu Facebook o Instagram existentes.
                             </p>
                         </div>
                     </div>
-                    
+
                     <div class="faq-item">
                         <button class="faq-question">
                             <span>¿Ofrecen soporte después de entregar?</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
                         <div class="faq-answer">
                             <p>
-                                Sí. Mantenimiento mensual desde $300 MXN (actualizaciones + soporte) 
+                                Sí. Mantenimiento mensual desde $300 MXN (actualizaciones + soporte)
                                 o por hora si solo necesitas cambios puntuales.
                             </p>
                         </div>
                     </div>
-                    
+
                     <div class="faq-item">
                         <button class="faq-question">
                             <span>¿Puedo ver el progreso?</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
                         </button>
                         <div class="faq-answer">
                             <p>
-                                Sí, te damos un enlace de preview y updates por WhatsApp 
+                                Sí, te damos un enlace de preview y updates por WhatsApp.
                             </p>
                         </div>
                     </div>
@@ -1041,21 +651,20 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- Contact -->
         <section id="contacto" class="section contact">
             <div class="container">
                 <div class="contact-grid">
                     <div class="contact-info">
-                        <span class="section-tag">Contacto</span>
                         <h2 class="section-title">Cuéntanos sobre tu proyecto</h2>
                         <p class="contact-description">
-                            No importa si estás empezando o si necesitas optimizar algo existente. 
-                            Cuéntanos qué necesitas y te ayudamos a encontrar la mejor solución.
+                            Estés empezando o necesites optimizar algo existente, cuéntanos qué necesitas
+                            y te ayudamos a encontrar la mejor solución.
                         </p>
-                        
+
                         <div class="contact-methods">
                             <a href="https://wa.me/5213350519325" target="_blank" rel="noopener" class="contact-method">
-                                <div class="method-icon">
+                                <div class="method-icon" aria-hidden="true">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                                     </svg>
@@ -1065,9 +674,9 @@
                                     <span class="method-value">33 5051 9325</span>
                                 </div>
                             </a>
-                            
+
                             <a href="https://github.com/DanielDAAR" target="_blank" rel="noopener" class="contact-method">
-                                <div class="method-icon">
+                                <div class="method-icon" aria-hidden="true">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                                     </svg>
@@ -1077,9 +686,9 @@
                                     <span class="method-value">@DanielDAAR</span>
                                 </div>
                             </a>
-                            
+
                             <div class="contact-method">
-                                <div class="method-icon">
+                                <div class="method-icon" aria-hidden="true">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                                         <circle cx="12" cy="10" r="3"/>
@@ -1092,7 +701,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="contact-form-wrapper">
                         <form id="contact-form" class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                             <input type="hidden" name="form-name" value="contact">
@@ -1104,17 +713,12 @@
                                 <label for="name" class="form-label">Nombre</label>
                                 <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre" required>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="email" class="form-label">Email</label>
                                 <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required>
                             </div>
-                            
-                            <div class="form-group">
-                                <label for="company" class="form-label">Empresa</label>
-                                <input type="text" id="company" name="company" class="form-input" placeholder="Nombre de tu empresa">
-                            </div>
-                            
+
                             <div class="form-group">
                                 <label for="service" class="form-label">¿Qué necesitas?</label>
                                 <select id="service" name="service" class="form-input form-select">
@@ -1126,15 +730,15 @@
                                     <option value="otro">Otro</option>
                                 </select>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="message" class="form-label">Cuéntanos más</label>
                                 <textarea id="message" name="message" class="form-input form-textarea" placeholder="Describe tu proyecto o necesidad..." rows="4" required></textarea>
                             </div>
-                            
+
                             <button type="submit" class="btn btn-primary btn-full">
                                 <span>Enviar mensaje</span>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                     <line x1="22" y1="2" x2="11" y2="13"/>
                                     <polygon points="22 2 15 22 11 13 2 9 22 2"/>
                                 </svg>
@@ -1151,26 +755,28 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="#" class="footer-logo">
-                        <img src="img/logo.jpg" alt="D.Softworks" class="logo-img">
+                    <a href="#inicio" class="footer-logo">
+                        <span class="logo-mark">
+                            <img src="img/logo.jpg" alt="D.Softworks" class="logo-img">
+                        </span>
                         <span class="logo-text">D.Softworks</span>
                     </a>
                     <p class="footer-description">
-                        Desarrollo de software y soluciones digitales para empresas. 
+                        Desarrollo de software y soluciones digitales para negocios.
                         Tu visión, nuestra tecnología.
                     </p>
                 </div>
-                
+
                 <div class="footer-links">
                     <h3 class="footer-title">Navegación</h3>
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#servicios">Precios</a></li>
                         <li><a href="#portafolio">Portafolio</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-links">
                     <h3 class="footer-title">Servicios</h3>
                     <ul>
@@ -1180,7 +786,7 @@
                         <li><a href="#servicios">Consultoría</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-links">
                     <h3 class="footer-title">Legal</h3>
                     <ul>
@@ -1189,24 +795,22 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
-                <p class="footer-copyright">
-                    &copy; 2026 D.Softworks. Todos los derechos reservados.
-                </p>
+                <p class="footer-copyright">&copy; 2026 D.Softworks. Todos los derechos reservados.</p>
                 <div class="footer-social">
                     <a href="https://www.facebook.com/profile.php?id=61581119766661" target="_blank" rel="noopener" aria-label="Facebook">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                             <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                         </svg>
                     </a>
                     <a href="https://www.instagram.com/d.softworks/" target="_blank" rel="noopener" aria-label="Instagram">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                         </svg>
                     </a>
                     <a href="https://github.com/DanielDAAR" target="_blank" rel="noopener" aria-label="GitHub">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                             <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                         </svg>
                     </a>
@@ -1217,7 +821,7 @@
 
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/5213350519325" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contactar por WhatsApp">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
         </svg>
     </a>
